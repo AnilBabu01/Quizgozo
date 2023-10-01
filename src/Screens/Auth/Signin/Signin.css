@@ -1,3 +1,8 @@
+body {
+  overflow: hidden; 
+  padding: 0px;
+  margin: 0px;
+}
 .mainauthdiv {
   display: flex;
   justify-content: center;
@@ -92,18 +97,12 @@
 }
 @media screen and (max-width: 780px) {
   .mainauthdiv {
-    background: radial-gradient(
-      104.92% 104.92% at -2.66% 53.79%,
-      #20a4ff 0%,
-      #53b9ff 25.83%,
-      #ffd4af 70.62%,
-      #ffd4af 100%
-    );
+    background: radial-gradient( 104.92% 104.92% at -2.66% 53.79%, #20a4ff 0%, #53b9ff 25.83%, #ffd4af 70.62%, #ffd4af 100% );
     background-blend-mode: overlay;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 98vh;
+    height: 100vh;
   }
 
   .formdiv {
