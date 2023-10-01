@@ -30,8 +30,9 @@
 
 .leftdiv img {
   width: 30rem;
-  height: 30rem;
-  border-radius: 20px;
+  height: 32rem;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
 }
 
 .rightdiv {
@@ -96,8 +97,10 @@
   .formdiv {
     flex-direction: column;
     width: 100%;
-    margin-top: 1%;
-    margin-bottom: 56%;
+    height: 36rem;
+    margin-top: 55%;
+    margin-bottom: 57%;
+    position: relative;
   }
   .leftdiv img {
     height: 30rem;
@@ -105,15 +108,27 @@
 
   .mainauthdiv img {
     width: 100%;
-    height: 29.2rem;
+    border-radius: 20px;
+    top: 4%;
+    height: 25.2rem;
   }
 
   .slectimgdiv img {
-    width: 5px;
-    height: 5px;
+    width: 20px;
+    height: 20px;
   }
   .rightdiv {
     padding: 0rem;
+    position: absolute;
     padding-bottom: 7%;
+    top: 39%;
+  }
+
+  .mainauthdiv {
+    padding: 2%;
+  }
+  .leftdiv {
+    position: absolute;
+    bottom: 66%;
   }
 }

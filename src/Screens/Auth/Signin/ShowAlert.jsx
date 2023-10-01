@@ -1,8 +1,8 @@
 import React from "react";
-import error from "../../../assets/error.jpeg";
-import logined from "../../../assets/logined.jpeg";
+import error from "../../../assets/error.png";
+import logined from "../../../assets/logined.png";
 import "./ShowAlert.css";
-const ShowAlert = (showtype, handleClose) => {
+const ShowAlert = (showtype) => {
   return (
     <>
       <div className="mainlertdiv">

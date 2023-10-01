@@ -7,9 +7,12 @@ import Signup from "../Screens/Auth/Signup/Signup";
 export default function MainRoutes() {
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
+
+
+    {/* dsfdrgf */}
       <Routes>
-        {/* <Route path="/" element={<Signup/>} /> */}
+        <Route path="/" element={<Signup/>} />
       </Routes>
     </>
   );
