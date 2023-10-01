@@ -1,18 +1,3 @@
-.mainauthdiv {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: radial-gradient(
-    104.92% 104.92% at -2.66% 53.79%,
-    #20a4ff 0%,
-    #53b9ff 25.83%,
-    #ffd4af 70.62%,
-    #ffd4af 100%
-  );
-  background-blend-mode: overlay;
-  padding-top: 7%;
-  padding-bottom: 7.5%;
-}
 .mainauthdiv img {
   width: 100%;
   height: 46.2rem;
@@ -121,7 +106,7 @@
   .formdiv {
     flex-direction: column;
     width: 100%;
-    height: 31rem;
+    height: 68%;
     position: relative;
     margin-bottom: 0rem;
     margin-top: 0rem;
@@ -148,8 +133,6 @@
     top: 39%;
   }
 
-  
-
   .leftdiv {
     position: absolute;
     bottom: 66%;
@@ -157,5 +140,6 @@
   .otp-input {
     padding: 0.5rem;
     border-radius: 5px;
+    margin-bottom: 30%;
   }
 }

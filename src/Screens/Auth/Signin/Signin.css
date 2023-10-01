@@ -10,8 +10,10 @@
     #ffd4af 100%
   );
   background-blend-mode: overlay;
-  padding-top: 7%;
-  padding-bottom: 7.5%;
+  display: flex;
+  justify-content:center ;
+  align-items: center;
+  height: 100vh;
 }
 .mainauthdiv img {
   width: 100%;
@@ -97,7 +99,7 @@
   .formdiv {
     flex-direction: column;
     width: 100%;
-    height: 31rem;
+    height: 68%;
     position: relative;
     margin-bottom: 0rem;
     margin-top: 0rem;
@@ -126,8 +128,11 @@
 
   .mainauthdiv {
     padding: 6%;
-    height: 88vh;
-    padding-top: 17%;
+    padding-top: 13%;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    height:90vh;
   }
   .leftdiv {
     position: absolute;
