@@ -2,6 +2,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background: radial-gradient(
+    104.92% 104.92% at -2.66% 53.79%,
+    #20a4ff 0%,
+    #53b9ff 25.83%,
+    #ffd4af 70.62%,
+    #ffd4af 100%
+  );
+  background-blend-mode: overlay;
 }
 .mainauthdiv img {
   width: 100%;
@@ -9,8 +17,6 @@
 }
 
 .formdiv {
-  position: absolute;
-  top: 20;
   background: rgba(255, 255, 255, 1);
   width: auto;
   height: auto;
@@ -18,9 +24,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.leftdiv {
+  margin-bottom: 7.9rem;
+  margin-top: 8rem;
 }
 
 .leftdiv img {
@@ -56,8 +61,14 @@
 .selectdivoption input {
   border: none;
 }
+
 .selectdivoption input:focus {
   outline: none;
+}
+
+.onlycodeinput {
+  margin-bottom: 1%;
+  font-size: 14px;
 }
 
 .getbtn {
@@ -69,11 +80,24 @@
   border-radius: 7px;
   color: white;
 }
-
+.otpinput {
+  border: 0.7px solid red;
+  border-radius: 0.5rem;
+  outline: none;
+  min-width: 2.2rem;
+  height: 2.2rem;
+}
 @media screen and (max-width: 780px) {
+  .onlycodeinput {
+    margin-bottom: 1.5%;
+    font-size: 14px;
+  }
+
   .formdiv {
     flex-direction: column;
     width: 100%;
+    margin-top: 1%;
+    margin-bottom: 56%;
   }
   .leftdiv img {
     height: 30rem;
@@ -81,7 +105,15 @@
 
   .mainauthdiv img {
     width: 100%;
-    height: 46.2rem;
+    height: 29.2rem;
   }
-  
+
+  .slectimgdiv img {
+    width: 5px;
+    height: 5px;
+  }
+  .rightdiv {
+    padding: 0rem;
+    padding-bottom: 7%;
+  }
 }
