@@ -10,7 +10,7 @@ export default function MainRoutes() {
       {/* <Navbar /> */}
 
       <Routes>
-        <Route path="/" element={<Signin />} />
+        <Route path="/" element={<Signin/>} />
       </Routes>
     </>
   );

@@ -72,72 +72,76 @@ const Signin = () => {
           </Box>
         </Fade>
       </Modal>
-      {/* <div className="mainauthdiv">
+      <div className="mainauthdiv">
         <div className="formdiv">
           <div className="leftdiv">
             <img src={imgleft} alt="leftimg" />
           </div>
           <div className="rightdiv">
-            {showverifyopt ? (
-              <>
-                <h1 htmlFor="otp">Enter OTP</h1>
-                <p>Enter the 6-digit OTP sent to</p>
-                <div className="input-group">
-                  <OtpInput
-                    id="otp"
-                    value={otp}
-                    onChange={setOtp}
-                    keyboardType="numeric"
-                    numInputs={6}
-                    containerStyle="otp-container"
-                    inputStyle="otp-input"
-                    renderInput={(props) => <input {...props} />}
-                    renderSeparator={
-                      <span style={{ margin: "0.2rem" }}> </span>
-                    }
-                  />
-                </div>
-                <button onClick={() => verifyotp()} className="getbtn">
-                  Submit
-                </button>
-              </>
-            ) : (
-              <>
-                <h1>Welcome Back!</h1>
-                <p>Sign In to your account</p>
-                <div className="selectdivoption">
-                  <Select
-                    required
-                    styles={customStyles}
-                    options={countries?.map((item) => ({
-                      label: (
-                        <div className="slectimgdiv">
-                          <img src={item?.link} alt={item.dial_code} />
-                        </div>
-                      ),
-                      value: `${item?.dial_code}`,
-                    }))}
-                    onChange={(opt) => setcountrycode(opt.value)}
-                  />
-                  <span className="onlycodeinput">{countrycode}</span>
-                  <input
-                    type="text"
-                    value={phoneNo}
-                    name="phoneNo"
-                    onChange={(e) => setphoneNo(e.target.value)}
-                  />
-                </div>
-                <button onClick={() => submit()} className="getbtn">
-                  Get Otp
-                </button>
-              </>
-            )}
+
+
+            <div  className="innearformddiv">
+              {showverifyopt ? (
+                <>
+                  <h1 htmlFor="otp">Enter OTP</h1>
+                  <p>Enter the 6-digit OTP sent to</p>
+                  <div className="input-group">
+                    <OtpInput
+                      id="otp"
+                      value={otp}
+                      onChange={setOtp}
+                      keyboardType="numeric"
+                      numInputs={6}
+                      containerStyle="otp-container"
+                      inputStyle="otp-input"
+                      renderInput={(props) => <input {...props} />}
+                      renderSeparator={
+                        <span style={{ margin: "12%" }}> </span>
+                      }
+                    />
+                  </div>
+                  <button onClick={() => verifyotp()} className="getbtn">
+                    Submit
+                  </button>
+                </>
+              ) : (
+                <>
+                  <h1>Welcome Back!</h1>
+                  <p>Sign In to your account</p>
+                  <div className="selectdivoption">
+                    <Select
+                      required
+                      styles={customStyles}
+                      options={countries?.map((item) => ({
+                        label: (
+                          <div className="slectimgdiv">
+                            <img src={item?.link} alt={item.dial_code} />
+                          </div>
+                        ),
+                        value: `${item?.dial_code}`,
+                      }))}
+                      onChange={(opt) => setcountrycode(opt.value)}
+                    />
+                    <span className="onlycodeinput">{countrycode}</span>
+                    <input
+                      type="text"
+                      value={phoneNo}
+                      name="phoneNo"
+                      onChange={(e) => setphoneNo(e.target.value)}
+                    />
+                  </div>
+                  <button onClick={() => submit()} className="getbtn">
+                    Get Otp
+                  </button>
+                </>
+              )}
+            </div>
           </div>
         </div>
-      </div> */}
-      <div className="mainauthdiv">
-        <h1>responsive</h1>
       </div>
+      {/* <div className="mainauthdiv">
+        <h1>responsive</h1>
+      </div> */}
     </>
   );
 };

@@ -78,93 +78,95 @@ const Signup = () => {
             <img src={imgleft} alt="leftimg" />
           </div>
           <div className="rightdiv">
-            {showverifyopt ? (
-              <>
-                <h1 htmlFor="otp">Enter OTP</h1>
-                <p>Enter the 6-digit OTP sent to</p>
-                <div className="input-group">
-                  <OtpInput
-                    id="otp"
-                    value={otp}
-                    onChange={setOtp}
-                    numInputs={6}
-                    containerStyle="otp-container"
-                    inputStyle="otp-input"
-                    renderInput={(props) => <input {...props} />}
-                    renderSeparator={
-                      <span style={{ margin: "0.2rem" }}> </span>
-                    }
-                    keyboardType = 'numeric'
-                  />
-                </div>
-                <button onClick={() => verifyotp()} className="getbtn">
-                  Submit
-                </button>
-              </>
-            ) : (
-              <>
-                {showcontinue ? (
-                  <>
-                    <h1>Welcome to Quizgozo!</h1>
-                    <p className="createdivtext">Create New account</p>
-                    <div className="divinputInfo">
-                      <input
-                        type="text"
-                        placeholder="Name"
-                        // value={phoneNo}
-                        // name="phoneNo"
-                        // onChange={(e) => setphoneNo(e.target.value)}
-                      />
-                    </div>
-                    <div className="divinputInfo">
-                      <input
-                        type="text"
-                        placeholder="Email"
-                        // value={phoneNo}
-                        // name="phoneNo"
-                        // onChange={(e) => setphoneNo(e.target.value)}
-                      />
-                    </div>
-                    <button
-                      onClick={() => setshowverifyopt(true)}
-                      className="getbtn"
-                    >
-                      Continue
-                    </button>
-                  </>
-                ) : (
-                  <>
-                    <h1>Welcome to Quizgozo!</h1>
-                    <p>Create New account</p>
-                    <div className="selectdivoption">
-                      <Select
-                        required
-                        styles={customStyles}
-                        options={countries?.map((item) => ({
-                          label: (
-                            <div className="slectimgdiv">
-                              <img src={item?.link} alt={item.dial_code} />
-                            </div>
-                          ),
-                          value: `${item?.dial_code}`,
-                        }))}
-                        onChange={(opt) => setcountrycode(opt.value)}
-                      />
-                      <span className="onlycodeinput">{countrycode}</span>
-                      <input
-                        type="text"
-                        value={phoneNo}
-                        name="phoneNo"
-                        onChange={(e) => setphoneNo(e.target.value)}
-                      />
-                    </div>
-                    <button onClick={() => submit()} className="getbtn">
-                      Get Otp
-                    </button>
-                  </>
-                )}
-              </>
-            )}
+            <div className="innearformddiv">
+              {showverifyopt ? (
+                <>
+                  <h1 htmlFor="otp">Enter OTP</h1>
+                  <p>Enter the 6-digit OTP sent to</p>
+                  <div className="input-group">
+                    <OtpInput
+                      id="otp"
+                      value={otp}
+                      onChange={setOtp}
+                      numInputs={6}
+                      containerStyle="otp-container"
+                      inputStyle="otp-input"
+                      renderInput={(props) => <input {...props} />}
+                      renderSeparator={
+                        <span style={{ margin: "12%" }}> </span>
+                      }
+                      keyboardType="numeric"
+                    />
+                  </div>
+                  <button onClick={() => verifyotp()} className="getbtn">
+                    Submit
+                  </button>
+                </>
+              ) : (
+                <>
+                  {showcontinue ? (
+                    <>
+                      <h1>Welcome to Quizgozo!</h1>
+                      <p className="createdivtext">Create New account</p>
+                      <div className="divinputInfo">
+                        <input
+                          type="text"
+                          placeholder="Name"
+                          // value={phoneNo}
+                          // name="phoneNo"
+                          // onChange={(e) => setphoneNo(e.target.value)}
+                        />
+                      </div>
+                      <div className="divinputInfo10">
+                        <input
+                          type="text"
+                          placeholder="Email"
+                          // value={phoneNo}
+                          // name="phoneNo"
+                          // onChange={(e) => setphoneNo(e.target.value)}
+                        />
+                      </div>
+                      <button
+                        onClick={() => setshowverifyopt(true)}
+                        className="getbtn"
+                      >
+                        Continue
+                      </button>
+                    </>
+                  ) : (
+                    <>
+                      <h1>Welcome to Quizgozo!</h1>
+                      <p>Create New account</p>
+                      <div className="selectdivoption">
+                        <Select
+                          required
+                          styles={customStyles}
+                          options={countries?.map((item) => ({
+                            label: (
+                              <div className="slectimgdiv">
+                                <img src={item?.link} alt={item.dial_code} />
+                              </div>
+                            ),
+                            value: `${item?.dial_code}`,
+                          }))}
+                          onChange={(opt) => setcountrycode(opt.value)}
+                        />
+                        <span className="onlycodeinput">{countrycode}</span>
+                        <input
+                          type="text"
+                          value={phoneNo}
+                          name="phoneNo"
+                          onChange={(e) => setphoneNo(e.target.value)}
+                        />
+                      </div>
+                      <button onClick={() => submit()} className="getbtn">
+                        Get Otp
+                      </button>
+                    </>
+                  )}
+                </>
+              )}
+            </div>
           </div>
         </div>
       </div>
