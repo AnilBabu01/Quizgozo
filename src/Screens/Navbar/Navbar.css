@@ -799,7 +799,8 @@ input#donation-date {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: #212232;
+  background: radial-gradient( 104.92% 104.92% at -2.66% 53.79%, #20a4ff 0%, #53b9ff 25.83%, #ffd4af 70.62%, #ffd4af 100% );
+  background-blend-mode: overlay;
 }
 
 .loader {
