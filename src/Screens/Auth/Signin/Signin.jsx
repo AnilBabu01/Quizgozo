@@ -41,7 +41,6 @@ const Signin = () => {
   const handleClose = () => setOpen(false);
   const submit = () => {
     setshowverifyopt(true);
-  
   };
 
   const verifyotp = () => {
@@ -73,7 +72,7 @@ const Signin = () => {
           </Box>
         </Fade>
       </Modal>
-      <div className="mainauthdiv">
+      {/* <div className="mainauthdiv">
         <div className="formdiv">
           <div className="leftdiv">
             <img src={imgleft} alt="leftimg" />
@@ -135,6 +134,9 @@ const Signin = () => {
             )}
           </div>
         </div>
+      </div> */}
+      <div className="mainauthdiv">
+        <h1>responsive</h1>
       </div>
     </>
   );
