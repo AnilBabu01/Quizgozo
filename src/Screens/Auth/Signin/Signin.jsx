@@ -41,11 +41,13 @@ const Signin = () => {
   const handleClose = () => setOpen(false);
   const submit = () => {
     setshowverifyopt(true);
+  
   };
 
   const verifyotp = () => {
     if (otp) {
       setshowtype(true);
+      localStorage.setItem("login", "logined");
       handleOpen();
     }
   };
@@ -86,7 +88,7 @@ const Signin = () => {
                     id="otp"
                     value={otp}
                     onChange={setOtp}
-                    keyboardType = 'numeric'
+                    keyboardType="numeric"
                     numInputs={6}
                     containerStyle="otp-container"
                     inputStyle="otp-input"

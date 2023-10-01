@@ -3,7 +3,9 @@ input#donation-date {
   overflow: hidden;
 }
 .logoimg {
-  width: 11rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .keydetailsdiv h1 {
   font-size: 20px;
@@ -67,6 +69,7 @@ input#donation-date {
   height: 4.2rem;
   background: rgba(23, 17, 44, 1);
   color: white;
+  padding-left: 1%;
 }
 .loginbtnHeader {
   background: #ff6900 !important;
@@ -88,7 +91,7 @@ input#donation-date {
   border-radius: 5px;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
-  border-bottom: 2px solid #ff6900;
+
 }
 .main_div_header_scroll {
   display: flex;
@@ -133,6 +136,7 @@ input#donation-date {
 .link_direct {
   color: white;
   text-decoration: none;
+  display: flex;
 }
 .link_directActive {
   color: #ff6900;
@@ -140,8 +144,8 @@ input#donation-date {
   border-bottom: 2px solid #ff6900;
 }
 .link_direct:hover {
-  color: #ff6900;
-  border-bottom: 2px solid #ff6900;
+  /* color: #ff6900; */
+ 
 }
 
 .link_direct10 {
@@ -151,7 +155,7 @@ input#donation-date {
 
 .link_direct10:hover {
   color: #ff6900;
-  border-bottom: 2px solid #ff6900;
+
 }
 .main_div_header10 p {
   margin-bottom: 0px;
@@ -166,7 +170,7 @@ input#donation-date {
 .main_div_header10 a:hover {
   background-color: #093959;
   color: #ff6900;
-  border-bottom: 2px solid #ff6900;
+
 }
 .dropbtn {
   background-color: #093959;
@@ -730,6 +734,7 @@ input#donation-date {
 }
 .logodivlinnk {
   color: white;
+  text-decoration: none;
 }
 .nav_menu {
   margin-right: -1rem;
@@ -737,7 +742,26 @@ input#donation-date {
 .link_directppp {
   font-weight: 500;
 }
+.pointdiv p {
+  padding: 0px;
+  padding-bottom: 0px;
+  color: #e7e7e7;
+  font-size: 16px;
+}
+.pointNo {
+  color: white;
+  font-size: 18px;
+}
 
+.menuicon {
+  width: 25px;
+  height: 25px;
+  margin-right: 19%;
+}
+
+.mainlinkdiv {
+  margin-right: 22%;
+}
 @media (max-width: 730px) {
   .nav_toggle {
     display: block;
@@ -799,7 +823,13 @@ input#donation-date {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: radial-gradient( 104.92% 104.92% at -2.66% 53.79%, #20a4ff 0%, #53b9ff 25.83%, #ffd4af 70.62%, #ffd4af 100% );
+  background: radial-gradient(
+    104.92% 104.92% at -2.66% 53.79%,
+    #20a4ff 0%,
+    #53b9ff 25.83%,
+    #ffd4af 70.62%,
+    #ffd4af 100%
+  );
   background-blend-mode: overlay;
 }
 

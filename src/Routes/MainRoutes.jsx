@@ -9,10 +9,8 @@ export default function MainRoutes() {
     <>
       {/* <Navbar /> */}
 
-
-    {/* dsfdrgf */}
       <Routes>
-        <Route path="/" element={<Signup/>} />
+        <Route path="/" element={<Signup />} />
       </Routes>
     </>
   );

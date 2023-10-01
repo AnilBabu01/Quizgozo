@@ -20,7 +20,11 @@ import { secondaryColor } from "../../utils/colorVariables";
 // import { useDispatch, useSelector } from "react-redux";
 // import { loadUser } from "../../../redux/actions/authActions";
 import { backendUrl } from "../../config/config";
-import logo from "../../assets/logo.jpeg";
+import logo from "../../assets/logo.png";
+import chart from "../../assets/chart.png";
+import Home from "../../assets/Home.png";
+import Search from "../../assets/Search.png";
+import Hurt from "../../assets/Hurt.png";
 import "./Navbar.css";
 function Navbar({ open, setOpen, setLoadingshow }) {
   const router = useNavigate();
@@ -169,57 +173,66 @@ function Navbar({ open, setOpen, setLoadingshow }) {
             {navbar ? (
               <>
                 <img src={logo} alt="Logo" />
+                <div>
+                  <p>GoZo Points</p>
+                  <p>5000</p>
+                </div>
               </>
             ) : (
               <>
                 <img src={logo} alt="Logo" />
+                <div className="pointdiv">
+                  <p>
+                    GoZo Points <br /> <span className="pointNo"> 50,000 </span>
+                  </p>
+                </div>
               </>
             )}
           </div>
         </Link>
 
         <div className={isMobile ? "main_div_header10" : "main_div_header10"}>
-          <div>
+          <div className="mainlinkdiv">
             <Link
               className={
                 router.pathname === "/" ? "link_directActive" : "link_direct"
               }
               href="/"
             >
-              Home
+              <img className="menuicon" src={Home} alt="home" /> Home
             </Link>
           </div>
           &nbsp;&nbsp; &nbsp;&nbsp;
-          <div>
+          <div className="mainlinkdiv">
             <Link
               className={
                 router.pathname === "/" ? "link_directActive" : "link_direct"
               }
               href="/"
             >
-              Search
+              <img className="menuicon" src={Search} alt="home" /> Search
             </Link>
           </div>
           &nbsp;&nbsp; &nbsp;&nbsp;
-          <div>
+          <div className="mainlinkdiv">
             <Link
               className={
                 router.pathname === "/" ? "link_directActive" : "link_direct"
               }
               href="/"
             >
-              Wishlist
+              <img className="menuicon" src={Hurt} alt="home" /> Wishlist
             </Link>
           </div>
           &nbsp;&nbsp; &nbsp;&nbsp;
-          <div>
+          <div className="mainlinkdiv">
             <Link
               className={
                 router.pathname === "/" ? "link_directActive" : "link_direct"
               }
               href="/"
             >
-              Rank
+              <img className="menuicon" src={chart} alt="home" /> Rank
             </Link>
           </div>
           &nbsp;&nbsp; &nbsp;&nbsp;
@@ -232,6 +245,7 @@ function Navbar({ open, setOpen, setLoadingshow }) {
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
+                marginRight:"3rem"
               }}
             >
               {/* {user?.data[0]?.profileurl ? (
@@ -267,12 +281,12 @@ function Navbar({ open, setOpen, setLoadingshow }) {
                 }}
               />
 
-              <IconButton size="small" aria-label="more">
+              {/* <IconButton size="small" aria-label="more">
                 <ArrowDropDownOutlinedIcon
                   size="large"
                   sx={{ color: secondaryColor }}
                 />
-              </IconButton>
+              </IconButton> */}
             </Box>
           </div>
         ) : (
