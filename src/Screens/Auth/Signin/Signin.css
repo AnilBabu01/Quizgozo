@@ -75,7 +75,7 @@
 .getbtn {
   width: 100%;
   height: 2rem;
-  margin-top: 3rem;
+  margin-top: 1rem;
   border: none;
   background: rgba(251, 140, 0, 1);
   border-radius: 7px;
@@ -97,7 +97,7 @@
   .formdiv {
     flex-direction: column;
     width: 100%;
-    height: 33rem;
+    height: 31rem;
     position: relative;
     margin-bottom: 0rem;
     margin-top: 0rem;
@@ -132,4 +132,6 @@
     position: absolute;
     bottom: 66%;
   }
+
+
 }

@@ -14,7 +14,7 @@ const style = {
   top: "50%",
   left: "50%",
   transform: "translate(-50%, -50%)",
-  width: "50%",
+  width: "auto",
   bgcolor: "background.paper",
   border: "2px solid white",
   boxShadow: 24,
@@ -86,7 +86,6 @@ const Signup = () => {
                   <OtpInput
                     id="otp"
                     value={otp}
-                    className=""
                     onChange={setOtp}
                     numInputs={6}
                     containerStyle="otp-container"
@@ -95,6 +94,7 @@ const Signup = () => {
                     renderSeparator={
                       <span style={{ margin: "0.2rem" }}> </span>
                     }
+                    keyboardType = 'numeric'
                   />
                 </div>
                 <button onClick={() => verifyotp()} className="getbtn">
