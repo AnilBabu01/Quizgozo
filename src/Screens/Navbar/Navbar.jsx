@@ -245,7 +245,7 @@ function Navbar({ open, setOpen, setLoadingshow }) {
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
-                marginRight:"3rem"
+                marginRight: "3rem",
               }}
             >
               {/* {user?.data[0]?.profileurl ? (
